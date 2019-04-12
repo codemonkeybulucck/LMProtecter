@@ -12,7 +12,7 @@
 @implementation LMProtecter
 
 id protect_method_implementation(id self, SEL _cmd){
-    return nil;
+    return [NSNull null];
 }
 
 + (BOOL)resolveInstanceMethod:(SEL)sel{
