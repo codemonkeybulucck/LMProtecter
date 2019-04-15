@@ -67,7 +67,7 @@ static inline BOOL isWhiteListClass(Class aClass){
     }
     //如果是自己的类或者是NSNULL则进行处理
     BOOL isNull = [classStr isEqualToString:NSStringFromClass([NSNull class])];
-    BOOL isBusinessCls = [classStr hasPrefix:classStr];
+    BOOL isBusinessCls = [classStr hasPrefix:ClassPrefix];
     return isNull || isBusinessCls;
 }
 
